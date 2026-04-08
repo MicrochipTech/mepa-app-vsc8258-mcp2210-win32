@@ -1,0 +1,62 @@
+Note: This log came from bash.
+testd@test-pc  /d/Desktop/test-pc/mepa-app-vsc8258-mcp2210-win32/build
+$ mingw32-make.exe >> ../docs/mingw32-make\ logs.txt 
+[  0%] Building C object mcp2210-hidapi/src/CMakeFiles/mcp2210-hidapi.dir/mcp2210-hidapi-gpio.c.obj
+[  0%] Building C object mcp2210-hidapi/src/CMakeFiles/mcp2210-hidapi.dir/mcp2210-hidapi-misc.c.obj
+[  0%] Building C object mcp2210-hidapi/src/CMakeFiles/mcp2210-hidapi.dir/mcp2210-hidapi-spi.c.obj
+[  7%] Building C object mcp2210-hidapi/src/CMakeFiles/mcp2210-hidapi.dir/mcp2210-hidapi.c.obj
+[  7%] Linking C static library libmcp2210-hidapi.a
+[  7%] Built target mcp2210-hidapi
+[  7%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/vtss.c.obj
+[ 14%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/vtss_ts.c.obj
+[ 14%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/vtss_macsec.c.obj
+[ 14%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/vtss_stubs.c.obj
+[ 14%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/common/vtss_phy_common.c.obj
+[ 21%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_1g/vtss_phy_init_scripts.c.obj
+[ 21%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_1g/vtss_phy_veriphy.c.obj
+[ 21%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_1g/vtss_phy.c.obj
+[ 28%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/macsec/vtss_macsec_api.c.obj
+[ 28%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_venice_c_sd10g65_setup.c.obj
+[ 28%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_phy_10g_malibu.c.obj
+[ 35%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_b_f2df_df2f_sd10g65_setup.c.obj
+[ 35%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_venice_c_f2df_sd10g65_setup.c.obj
+[ 35%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_b_host_pma_sd10g65_setup.c.obj
+[ 42%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_line_pma_sd10g65_setup.c.obj
+[ 42%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_phy_10g.c.obj
+[ 42%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_phy_10g_api.c.obj
+[ 50%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_wis_api.c.obj
+[ 50%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_b_pll5g_setup.c.obj
+[ 50%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_f2df_df2f_sd10g65_setup.c.obj
+[ 50%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_host_pma_sd10g65_setup.c.obj
+[ 57%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_phy_10g_venice.c.obj
+[ 57%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_malibu_b_line_pma_sd10g65_setup.c.obj
+[ 57%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_venice_f2df_sd10g65_setup.c.obj
+[ 64%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_pll5g_procs.c.obj
+[ 64%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_sd10g65_procs.c.obj
+[ 64%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/phy_10g/vtss_sd10g65_apc_procs.c.obj
+[ 71%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/ts/vtss_phy_ts_api.c.obj
+[ 71%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/ts/vtss_phy_ewis.c.obj
+[ 71%] Building C object _deps/mepa-build/vtss/CMakeFiles/mepa_drv_vtss_custom.dir/src/ts/vtss_phy_ts_util.c.obj
+[ 78%] Linking C static library libmepa_drv_vtss_custom.a
+[ 78%] Built target mepa_drv_vtss_custom
+[ 78%] Building C object _deps/mepa-build/CMakeFiles/mepa_common.dir/common/src/phy.c.obj
+[ 85%] Linking C static library libmepa_common.a
+[ 85%] Built target mepa_common
+[ 92%] Bundling mepa
+[ 92%] Built target mepa_target
+[ 92%] Building C object CMakeFiles/mepa_app_malibu_mcp2210-win32.dir/mepa_appl_custom_malibu.c.obj
+[100%] Building C object CMakeFiles/mepa_app_malibu_mcp2210-win32.dir/mcp2210_hidapi_mepa_hal.c.obj
+D:\Desktop\test-pc\mepa-app-vsc8258-mcp2210-win32\mcp2210_hidapi_mepa_hal.c: In function 'mcp2210_hidapi_init':
+D:\Desktop\test-pc\mepa-app-vsc8258-mcp2210-win32\mcp2210_hidapi_mepa_hal.c:146:7: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  146 |   int res = 0;
+      |       ^~~
+In file included from D:\Desktop\test-pc\mepa-app-vsc8258-mcp2210-win32\mcp2210_hidapi_mepa_hal.c:23:
+D:/Desktop/test-pc/mepa-app-vsc8258-mcp2210-win32/mcp2210-hidapi/include/mcp2210-hidapi/mcp2210-hidapi.h: At top level:
+D:/Desktop/test-pc/mepa-app-vsc8258-mcp2210-win32/mcp2210-hidapi/include/mcp2210-hidapi/mcp2210-hidapi.h:49:22: warning: 'rsp_buf' defined but not used [-Wunused-variable]
+   49 | static unsigned char rsp_buf[65];
+      |                      ^~~~~~~
+D:/Desktop/test-pc/mepa-app-vsc8258-mcp2210-win32/mcp2210-hidapi/include/mcp2210-hidapi/mcp2210-hidapi.h:48:22: warning: 'cmd_buf' defined but not used [-Wunused-variable]
+   48 | static unsigned char cmd_buf[65];
+      |                      ^~
+[100%] Linking C executable mepa_app_malibu_mcp2210-win32.exe
+[100%] Built target mepa_app_malibu_mcp2210-win32

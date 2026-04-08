@@ -1,0 +1,6 @@
+[submodule "mcp2210-hidapi"]
+	path = mcp2210-hidapi
+	url = git@github.com:joem-mchp/mcp2210-hidapi.git
+[submodule "sw-mepa"]
+	path = sw-mepa
+	url = git@github.com:microchip-ung/sw-mepa.git
