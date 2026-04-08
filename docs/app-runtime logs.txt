@@ -1,0 +1,176 @@
+Note: This log came from bash.
+
+test@test-pc /d/Desktop/test-pc/mepa-app-vsc8258-mcp2210-win32/build
+$ ./mepa_app_malibu_mcp2210-win32.exe >> ../docs/app-runtime\ logs.txt 
+VSC8258/Malibu - MCP2210-HIDAPI Win32/Linux Code.
+
+Error at 142
+
+Debug at 143
+
+Warning at 144
+
+Info at 145
+
+//Default Setup Assumptions: 
+//Board has Power Applied prior to Demo start 
+//Pwr Supply/Voltages Stable, Ref Clk Stable, Ref & PLL Stable 
+
+main: Connecting to the VSC8258EV/Malibu board via MCP2210-HIDAPI SPI... 
+
+main: Initializing MCP2210-HIDAPI... 
+
+In malibu_mcp2210_board_init
+Opened MCP2210
+
+Manufacturer String: Microchip Technology Inc.
+Product String: MCP2210 USB-to-SPI Master
+Serial Number String: (48) 0000152519
+Indexed String 1: Microchip Technology Inc.
+DEV_ID: 0x00008258
+Out VSC8258EV with MCP2210 Evaluation Board
+In Line 163: Dev ID = 0x8258
+
+
+
+mepa_create: rc: 0
+
+
+
+appl_malibu_spi_io_test
+
+
+
+Test reading global device ID register...
+0x1Ex0000 = 0x8258
+1x1Ex0000 = 0x8258
+2x1Ex0000 = 0x8258
+
+Test writing to 0x1xF112...
+1.0x1xF112 = 0x7DF820
+Write 0x3DF828
+
+2. 0x1xF112 = 0x3DF828
+
+Test writing to 1x1xF112...
+1. 1x1xF112 = 0x7DF820
+Write 0x4DF828
+
+2. 1x1xF112 = 0x4DF828
+
+Test writing to 2x1xF112...
+1. 2x1xF112 = 0x7DF820
+Write 0x5DF828
+
+2. 2x1xF112 = 0x5DF828
+Write 0x7DF820
+
+3. 2x1xF112 = 0x7DF820
+
+Test writing to 3x1xF112...
+1. 3x1xF112 = 0x7DF820
+Write 0x6DF828
+
+2. 3x1xF112 = 0x6DF828
+Write 0x7DF820
+
+3. 3x1xF112 = 0x7DF820
+
+Test reading from 0x1xF120...
+1. 0x1xF120 = 0x4104EA6
+2. 1x1xF120 = 0x4104EA6
+3.2x1xF120 = 0x4104EA6
+4. 3x1xF120 = 0x4104EA6
+
+Test writing to 0x1xF121...
+1. 0x1xF121 = 0x88888924
+Write 0x48888924
+
+2. 0x1xF121 = 0x48888924
+Write back #1
+
+3. 0x1xF121 = 0x88888924
+
+
+Resetting port 0
+appl_mepa_reset_phy: rc: 0
+
+Resetting port 1
+appl_mepa_reset_phy: rc: 0
+
+Resetting port 2
+appl_mepa_reset_phy: rc: 0
+
+Resetting port 3
+appl_mepa_reset_phy: rc: 0
+
+
+
+Configuring port 0
+appl_mepa_phy_init: rc: 0
+
+Configuring port 1
+appl_mepa_phy_init: rc: 0
+
+Configuring port 2
+appl_mepa_phy_init: rc: 0
+
+Configuring port 3
+appl_mepa_phy_init: rc: 0
+
+
+
+
+
+mepa_phy_info_get: rc: 0, PHY Cap: 0x24, Part: 0x8258
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
+Port: 0, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 1, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 2, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+Port: 3, rc: 0, Speed: Undefined, fdx: No, Cu: No, Fi: No, Link: Down
+
