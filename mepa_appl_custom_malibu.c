@@ -114,6 +114,8 @@ extern __attribute__((weak)) mepa_rc mcp2210_hidapi_spi_32bit_write(struct mepa_
 extern int malibu_mcp2210_board_init(int argc, const char **argv);
 // Use code from aux-func.c to keep this file clean.
 extern __attribute__((weak)) mepa_rc aux_malibu_gpio_conf(mepa_port_no_t port_no); // Use "weak" so it is NULL in memory.
+extern __attribute__((weak)) mepa_rc aux_malibu_ckout_conf(mepa_port_no_t port_no); // Use "weak" so it is NULL in memory.
+extern __attribute__((weak)) mepa_rc aux_malibu_ckout_get(mepa_port_no_t port_no);
 
 mepa_callout_t appl_mcp2210_hidapi_spi =
 {
@@ -235,7 +237,12 @@ mepa_callout_t appl_mcp2210_hidapi_spi =
     // rc = mepa_media_set(appl_malibu_device[2], phy_media_if);
     // printf("mepa_media_set: rc %d, port 2", rc);
 
-
+    // Enable Output SyncE Reference Clock at SCKOUT
+    printf("\r\n MEPA Output Recovered Clock in SCKOUT \r\n");
+    for (i = 0; i < APPL_PORT_COUNT; i++) {
+        printf("Port %d output recovered clock configuration %s\r\n", i, aux_malibu_ckout_conf(i)? "failed" : "success");
+    }
+    
     // Poll PHY ports.
     for(i = 0; i < 10; i++)
     {

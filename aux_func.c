@@ -256,3 +256,35 @@ mepa_rc aux_malibu_gpio_conf(mepa_port_no_t port_no)
 
     return rc;
 }
+
+mepa_rc aux_malibu_ckout_conf(mepa_port_no_t port_no)
+{
+    vtss_phy_10g_sckout_conf_t    sckout;
+    vtss_phy_10g_lane_sync_conf_t ls;
+
+    /* 1) Configure the SCKOUT DF2F macro (freq + output buffer) */
+    memset(&sckout, 0, sizeof(sckout));
+    sckout.enable      = TRUE;
+    sckout.mode        = VTSS_PHY_10G_SYNC_DISABLE;   /* selected via lane_sync */
+    sckout.freq        = VTSS_PHY_10G_SCKOUT_156_25;  /* or _125_00 */
+    sckout.src         = VTSS_CKOUT_NO_SQUELCH;
+    sckout.squelch_inv = FALSE;
+    if (vtss_phy_10g_sckout_conf_set(NULL, port_no, &sckout) != VTSS_RC_OK) {
+        printf("sckout_conf_set failed on port %u\n", port_no);
+        return VTSS_RC_ERROR;
+    }
+
+    /* 2) Bind Line-2 recovered clock to SCKOUT and enable synth (mandatory) */
+    memset(&ls, 0, sizeof(ls));
+    ls.enable   = TRUE;
+    ls.rx_macro = VTSS_PHY_10G_RX_MACRO_LINE;
+    ls.rx_ch    = 2;                              /* Line 2 */
+    ls.tx_macro = VTSS_PHY_10G_TX_MACRO_SCKOUT;
+    ls.tx_ch    = 0;
+    if (vtss_phy_10g_lane_sync_set(NULL, port_no, &ls) != VTSS_RC_OK) {
+        printf("lane_sync_set failed on port %u\n", port_no);
+        return VTSS_RC_ERROR;
+    }
+
+    return VTSS_RC_OK;
+}
